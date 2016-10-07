@@ -6,31 +6,31 @@ angular.module('devmtnTravel', ['ui.router'])
                 templateUrl: "../views/about.html"
             })
             .state('adventurers',{
-                url:'/adventurers',
+                url:'adventurers',
                 parent:'home',
                 templateUrl: "../views/about-adventurers.html"
             })
             .state('contact',{
-                url:'/contact',
+                url:'contact',
                 parent:'home',
                 templateUrl: "../views/contact.html"
             })
             .state('packages',{
-                url:'/packages',
+                url:'/packagesCtrl',
                 templateUrl: "../views/packages.html",
-                controller: 'mainCtrl',
+                controller: 'packagesCtrl',
                 controllerAs: 'vm'
             })
             .state('booked',{
                 url:'/booked/:id',
                 templateUrl: "../views/booked.html",
-                controller: 'mainCtrl',
+                controller: 'bookedCtrl',
                 controllerAs: 'vm'
             })
             .state('locations',{
                 url:'/locations',
                 templateUrl: "../views/locations.html",
-                controller: 'mainCtrl',
+                controller: 'locationsCtrl',
                 controllerAs: 'vm'
             });
 
